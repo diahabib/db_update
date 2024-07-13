@@ -1,5 +1,4 @@
 import mysql.connector
-from dotenv import load_dotenv
 
 def execute_query():
     try:
