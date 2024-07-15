@@ -44,6 +44,8 @@ def execute_query():
         insert_query = """
         INSERT INTO T3 (C2T1, C1T2)
         VALUES (%s, %s)
+        ON DUPLICATE KEY UPDATE
+        C2T1 = VALUES(C2T1), C1T2 = VALUES(C1T2)    
         """
 
         # Exécuter les insertions dans CC
