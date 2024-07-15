@@ -33,7 +33,7 @@ def execute_query():
         select_query = """
         SELECT t1.C2T1, t2.C1T2
         FROM BASE1.T1 t1
-        JOIN BASE2.T2 t2 ON t1.C1T1 = t2.C1T2
+        JOIN BASE2.T2 t2
         """
 
         # Exécuter la requête pour récupérer les données
